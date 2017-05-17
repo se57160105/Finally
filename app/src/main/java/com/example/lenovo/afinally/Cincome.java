@@ -3,6 +3,7 @@ package com.example.lenovo.afinally;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.SpannableStringBuilder;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -52,18 +53,24 @@ public class Cincome extends AppCompatActivity {
                                 String bacNo = Hds_request.getString("bacNo");
                                 String baCode = Hds_request.getString("baCode");
                                 String cNo = Hds_request.getString("cNo");
+                                String cStatus = Hds_request.getString("cStatus");
                                 String cDate = Hds_request.getString("cDate");
                                 String deta_code = Hds_request.getString("deta_code");
                                 String cAmount = Hds_request.getString("cAmount");
                                 //ar.add(rq_code);
                                 //String age = student.getString("age");
+                                SpannableStringBuilder builder = new SpannableStringBuilder();
+                                String Status ="N";
+                                if (cStatus.equals(Status)){
+                                    Status = "รับแล้ว  ";
+                                }else{
+                                    Status = "ยังไม่รับ";
+                                }
 
-                                Cincome.append(cDate + "\tเลขที่ "+ cNo + "\n"+
-                                        "\t\tสาขา" + bacBranch + " " + cAmount +"\n\n");
-
-
-                                //textView.append(rq_subject + " " + rq_code + " " + " \n ");
-
+                                Cincome.append( "  เลขที่ "+ cNo +"\n  "+
+                                        cDate +"\n  "+
+                                        "สาขา " + bacBranch +"            \n  "+"สถานะ :       "+ Status + "                    " + cAmount +"     \n\n");
+                                //Cincome.setBackgroundResource(R.color.white);
                             }
 
                         } catch (JSONException e) {

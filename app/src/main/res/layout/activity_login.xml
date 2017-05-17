@@ -10,31 +10,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.lenovo.afinally.Login"
     android:background="@drawable/bglogin">
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView3"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="500dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="40dp"
             android:orientation="vertical">
         <ImageView
-            android:layout_width="400dp"
-            android:layout_height="460dp"
-            android:layout_marginTop="50dp"
+            android:layout_width="320dp"
+            android:layout_height="390dp"
+            android:layout_marginTop="70dp"
             android:layout_gravity="center"
             android:background="@drawable/logpic"/>
             <EditText
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="-300dp"
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="-275dp"
                 android:background="#e4e2e2"
                 android:id="@+id/username"
                 android:hint="    Username"
@@ -42,18 +35,17 @@
 
             <ImageView
                 android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="-51dp"
-                android:layout_marginLeft="50dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginLeft="55dp"
                 android:src="@drawable/pass1"
                 android:background="#7ed7df"/>
 
 
             <EditText
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="105dp"
                 android:layout_marginTop="20dp"
                 android:id="@+id/password"
                 android:background="#e4e2e2"
@@ -64,15 +56,15 @@
 
             <ImageView
                 android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="-50dp"
-                android:layout_marginLeft="50dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginLeft="55dp"
                 android:background="#7ed7df"
                 android:src="@drawable/user1"/>
             <Button
                 android:id="@+id/Btnlogin"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:text="Login"
@@ -84,20 +76,16 @@
 
         </LinearLayout>
 
-    </ScrollView>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:textSize="60dp"
+        android:layout_height="50dp"
+        android:textSize="40dp"
         android:text="Accounting"
         android:textStyle="bold"
         android:textColor="#195673"
         android:textAlignment="center"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_alignLeft="@+id/scrollView3"
-        android:layout_alignStart="@+id/scrollView3"
+        android:layout_marginTop="20dp"
         android:id="@+id/textView2" />
 
 </RelativeLayout>

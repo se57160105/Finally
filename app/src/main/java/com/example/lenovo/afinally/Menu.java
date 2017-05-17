@@ -62,7 +62,7 @@ public class Menu extends AppCompatActivity {
     private View.OnClickListener OnClickSubmitRpPisud = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent in = new Intent(getApplicationContext(),Pay.class);
+            Intent in = new Intent(getApplicationContext(),Pisudyod.class);
             startActivity(in);
         }
     };

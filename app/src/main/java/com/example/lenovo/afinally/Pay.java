@@ -57,12 +57,16 @@ public class Pay extends AppCompatActivity {
                                 //ar.add(rq_code);
                                 //String age = student.getString("age");
 
-                                Pay.append(bacNum + " " +  bacName + "\n"
-                                        + baName + " " + bacBranch + " \n" + bacNo +
-                                        " " + baCode+"/"+cNo +"\n"
-                                        + cDate +" " + deta_code +"\n" + cAmount+" THB\n"+"\n"
-                                );
-
+                               /* Pay.append( "\n  "+ bacNum + " " +  bacName + "\n  "
+                                        + baName + " " + bacBranch + " \n  " + bacNo +
+                                        " " + baCode+"/"+cNo +"\n  "
+                                        + cDate +" " + deta_code +"\n  " + cAmount+" THB\n"+"\n"
+                                );*/
+                                Pay.append("  Date :  " + cDate +    "\n  " + bacNum + "   "+  bacName + "\n"+
+                                        "  เลขที่บัญชี  " + bacNo + "   \n  เลขที่เช็ค  "+ cNo + "\n"
+                                        + "  "+baName+ "\n  "+baCode+"   " + "สาขา  "+ bacBranch + "\n"
+                                        + "                                                        " +cAmount+ "   \n\n" );
+                                //Pay.setBackgroundResource(R.color.white);
                                 //textView.append(rq_subject + " " + rq_code + " " + " \n ");
 
                             }

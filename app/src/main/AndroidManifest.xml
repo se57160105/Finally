@@ -20,13 +20,17 @@
         <activity android:name=".Menu"
             android:label="เมนูระบบบัญชี"/>
         <activity android:name=".Income"
-            android:label="เช็ครับ"/>
+            android:label="รายงานเช็ครับ"/>
         <activity android:name=".Pay"
-            android:label="เช็คจ่าย"/>
+            android:label="รายงานเช็คจ่าย"/>
         <activity android:name=".Cincome"
-            android:label="ปรับสถานะเช็ครับ"/>
+            android:label="จัดการเช็ครับ"/>
         <activity android:name=".Cpay"
-            android:label="ปรับสถานะเช็คจ่าย"></activity>
+            android:label="จัดการเช็คจ่าย"></activity>
+        <activity android:name=".Pisudyod"
+            android:label="รายงานพิสูจน์ยอด"
+            android:theme="@style/AppTheme.NoActionBar">
+            ></activity>
     </application>
 
 </manifest>
